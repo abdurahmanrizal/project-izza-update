@@ -47,13 +47,13 @@
                             <img src="{{asset('img/svg_icon/electricity.png')}}" alt="icon-Distribusi-Tenaga-Listrik-Tegangan-Menengah" class="img-fluid img-responsive d-block mx-auto">
                         </div>
                         <div class="col-lg-9 col-md-12 text-justify mt-3">
-                            Yaitu jaringan distribusi dari gardu distribusi untuk di salurkan ke pelanggan dengan klasifikasi tegangan rendah yaitu 220 V atau 380 V (antar fasa). Pelanggan yang memakai tegangan rendah ini adalah pelanggan paling banyak karena daya yang dipakai tidak terlalu banyak. Jaringan dari gardu distribusi dikenal dengan JTR (Jaringan Tegangan Rendah), lalu dari JTR dibagi-bagi untuk ke rumah pelanggan, saluran yang masuk dari JTR ke rumah pelanggan disebut Sambungan Rumah (SR). Pelanggan tegangan ini banyaknya menggunakan listrik satu fasa, walau ada beberapa memakai listrik tiga fasa.
+                            Yaitu jaringan distribusi tenaga listrik yang berasal dari jaringan transmisi yang diturunkan tegangannya di Gardu Induk (GI) menjadi Tegangan Menengah (TM) dengan nominal tegangan 20 kV yang biasa disebut JTM (Jaringan Tegangan Menengah) lalu disalurkan ke lokasi-lokasi pelanggan listrik kemudian di turunkan tegangannya di trafo pada gardu distribusi untuk disalurkan ke pelanggan.
                             <br>
-                            Pemeriksaan dan Pengujian instalasi ini meliputi:
+                            Pemeriksaan dan Pengujian instalasi ini meliputi :
                             <ol class="ol-helper">
                                 <li>Komponen Switching dan Aksesorisnya</li>
                                 <li>Konstruksi Jaringan</li>
-                                <li>Tranformator distribusi dan Aksesoriesnya</li>
+                                <li>Tranformator distribusi dan Aksesorisnya</li>
                                 <li>Peralatan Proteksi</li>
                                 <li>Kabel Penghantar</li>
                                 <li>Sistem Pembumian</li>
