@@ -503,19 +503,19 @@
                     <div class="col-lg-4 col-md-4 footer-3">
                         <h4 class="text-light font-weight-bold text-right">Layanan Kami</h4>
                         <p class="mb-2 text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Rendah')">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Rendah</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Rendah', $event)">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Rendah</a>
                         </p>
                         <p class="mb-2 text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Menengah</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Menengah', $event)">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Menengah</a>
                         </p>
                         <p class="mb-2 text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah', $event)">Pemeriksaan dan Pengujian Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah</a>
                         </p>
                         <p class="mb-2 text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Disel')">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Disel', $event)">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel</a>
                         </p>
                         <p class="text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Baru Terbarukan')">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Baru Terbarukan</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Baru Terbarukan', $event)">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Baru Terbarukan</a>
                         </p>
                     </div>
                 </div>
@@ -674,7 +674,8 @@
                         scrollTop: $("."+divClass).offset().top
                     }, 2000)
                 },
-                showMoreServiceFooter:function(footerText) {
+                showMoreServiceFooter:function(footerText, event) {
+                    event.preventDefault()
                     let res = footerText.replace(/ /g, '-')
                     urlDetail = `{{route('detail.service', ['name' => ":footerText"])}}`
                     urlDetail = urlDetail.replace(':footerText', res)
