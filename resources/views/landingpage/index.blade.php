@@ -288,7 +288,7 @@
                                                                 <img src="{{asset('img/gallery'.'/'.$item_gallery)}}.jpg" alt="{{$item_gallery}}" class="img-responsive w-100"  height="200">
                                                             </div>
                                                             <div class="portfolio_hover">
-                                                                <div class="title" id="title-gallery">
+                                                                <div class="title" id="title-gallery" @click="clickImage('{{$item_gallery}}')">
                                                                     <h3>PT.IZZA INSPEKINDO</h3>
                                                                 </div>
                                                             </div>
@@ -301,7 +301,7 @@
                                                                 <img src="{{asset('img/gallery'.'/'.$item_gallery)}}.jpg" alt="{{$item_gallery}}" class="img-responsive w-100">
                                                             </div>
                                                             <div class="portfolio_hover">
-                                                                <div class="title" id="title-gallery">
+                                                                <div class="title" id="title-gallery" @click="clickImage('{{$item_gallery}}')">
                                                                     <h3>PT.IZZA INSPEKINDO</h3>
                                                                 </div>
                                                             </div>
@@ -314,7 +314,7 @@
                                                                 <img src="{{asset('img/gallery'.'/'.$item_gallery)}}.jpg" alt="{{$item_gallery}}" class="img-responsive w-100">
                                                             </div>
                                                             <div class="portfolio_hover">
-                                                                <div class="title" id="title-gallery">
+                                                                <div class="title" id="title-gallery" @click="clickImage('{{$item_gallery}}')">
                                                                     <h5>PT.IZZA INSPEKINDO</h5>
                                                                 </div>
                                                             </div>
@@ -329,6 +329,26 @@
                               </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-image" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Preview Gambar</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                       <div id="img-resource">
+
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -423,6 +443,14 @@
             methods: {
                 showGallery: function() {
                    window.open("{{route('view.all.gallery')}}","_blank")
+                },
+                clickImage: function(resourceImg) {
+                    let resource = "{{asset('img/gallery'.'/'.':img')}}.jpg"
+                    resource = resource.replace(':img', resourceImg)
+                    $('#img-resource').html(`
+                        <img src="${resource}" class="img-responsive w-100" style="height:500px">
+                    `)
+                    $('#modal-image').modal('show')
                 }
             }
         })

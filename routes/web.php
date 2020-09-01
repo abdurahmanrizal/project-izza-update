@@ -30,7 +30,7 @@ Route::get('/proses-sertifikasi', function(){
     return view('landingpage.sertification');
 })->name('view.process.sertification');
 
-Route::get('/service/{name}', 'landingPageController@service');
+Route::get('/service/{name}', 'landingPageController@service')->name('detail.service');
 
 Route::group(['prefix' => 'news'], function () {
     Route::get('all', function(){

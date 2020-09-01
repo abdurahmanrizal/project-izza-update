@@ -28,10 +28,10 @@
                     <h4 class="p-3 font-weight-bold" id="sambutan-direktur-title">SAMBUTAN DIREKTUR PT. IZZA ELEKTRIKA INSPEKSI SOLUSINDO ?</h4>
                     <br>
                     <div class="row">
-                        <div class="col-lg-3 col-md-12" id="img-direktur">
+                        {{-- <div class="col-lg-3 col-md-12" id="img-direktur">
                             <img src="{{asset('img/svg_icon/camera.png')}}" class="img-fluid shadow" alt="img-direktur">
-                        </div>
-                        <div class="col-lg-9 col-md-12">
+                        </div> --}}
+                        <div class="col-lg-12 col-md-12 ml-3">
                             <p class="text-justify">
                                 Pada kesempatan ini menejemen “PT. IZZA ELEKTRIKA INSPEKSI SOLUSINDO “  menyampaikan terimakasih pada semua pelanggan yang telah memberikan kesempatan dan kepercayaan kepada Perusahaan kami untuk melaksanakan dalam bidang bidang Kelayakan Teknik Tegangan Kelistrikan guna mendukung kepentingan dari perusahaan khususnya dibidang inspeksi. Kami akan terus menjaga kualitas dan integritas, selalu memberi yang terbaik bagi seluruh pelanggan yang telah memeberi kepercayaan kepada kami.
                             </p>

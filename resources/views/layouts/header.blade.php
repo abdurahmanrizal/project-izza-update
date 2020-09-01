@@ -501,20 +501,20 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 footer-3">
-                        <h4 class="text-light font-weight-bold">Layanan Kami</h4>
-                        <p class="mb-2">
+                        <h4 class="text-light font-weight-bold text-right">Layanan Kami</h4>
+                        <p class="mb-2 text-right">
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Rendah')">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Rendah</a>
                         </p>
-                        <p class="mb-2">
+                        <p class="mb-2 text-right">
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Menengah</a>
                         </p>
-                        <p class="mb-2">
+                        <p class="mb-2 text-right">
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Tenaga Listrik Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Tenaga Listrik Tegangan Menengah</a>
                         </p>
-                        <p class="mb-2">
+                        <p class="mb-2 text-right">
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Disel')">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel</a>
                         </p>
-                        <p>
+                        <p class="text-right">
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Baru Terbarukan')">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Baru Terbarukan</a>
                         </p>
                     </div>
@@ -594,8 +594,10 @@
     <script src="js/mail-script.js"></script> --}}
 
     <script src="{{asset('js/main.js')}}"></script>
-    {{-- vue js --}}
+    {{-- vue js developement --}}
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    {{-- vue js production --}}
+    {{-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> --}}
     {{-- axios --}}
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
@@ -671,6 +673,12 @@
                     $('html, body').animate({
                         scrollTop: $("."+divClass).offset().top
                     }, 2000)
+                },
+                showMoreServiceFooter:function(footerText) {
+                    let res = footerText.replace(/ /g, '-')
+                    urlDetail = `{{route('detail.service', ['name' => ":footerText"])}}`
+                    urlDetail = urlDetail.replace(':footerText', res)
+                    window.open(urlDetail, '_blank')
                 }
 
             }
