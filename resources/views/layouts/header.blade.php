@@ -509,7 +509,7 @@
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Distribusi Tenaga Listrik Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Menengah</a>
                         </p>
                         <p class="mb-2 text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Tenaga Listrik Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Tenaga Listrik Tegangan Menengah</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah')">Pemeriksaan dan Pengujian Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah</a>
                         </p>
                         <p class="mb-2 text-right">
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Disel')">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel</a>
