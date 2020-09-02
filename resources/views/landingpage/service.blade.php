@@ -6,7 +6,7 @@
             margin-top: 1rem !important;
         }
         .ol-helper li {
-            list-style-type:lower-alpha !important;
+            list-style-type:upper-alpha !important;
         }
         @media(max-width: 768px) {
             h2 {
