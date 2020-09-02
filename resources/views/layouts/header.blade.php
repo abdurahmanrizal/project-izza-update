@@ -351,7 +351,7 @@
                                                 <li style="cursor: pointer !important" v-on:click="toDashboard">Galeri</li>
                                             @endif
                                             <li><a href="{{route('client')}}">Klien</a></li>
-                                            <li><a href="{{route('dashboard')}}">Kontak Kami</a></li>
+                                            <li style="cursor: pointer !important" v-on:click="scrollSmooth('footer')">Kontak Kami</li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -595,9 +595,9 @@
 
     <script src="{{asset('js/main.js')}}"></script>
     {{-- vue js developement --}}
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> --}}
     {{-- vue js production --}}
-    {{-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     {{-- axios --}}
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
