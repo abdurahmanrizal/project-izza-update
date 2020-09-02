@@ -80,7 +80,7 @@
                             </ol>
                         </div>
                         @break
-                    @case(strtoupper('Instalasi Pembangkit Listrik Tenaga Disel'))
+                    @case(strtoupper('Instalasi Pembangkit Listrik Tenaga Diesel'))
                         <div class="col-lg-12 col-md-12">
                             <h2 class="font-weight-bold" style="color: #1ea1f1" style="max-width: 100%">{{$title}}</h2>
                         </div>
@@ -105,7 +105,7 @@
                             </ol>
                         </div>
                         @break
-                    @case(strtoupper('Instalasi Pembangkit Listrik Tenaga Baru Terbarukan'))
+                    @case(strtoupper('Instalasi Pembangkit Listrik Tenaga Energi Baru dan Terbarukan'))
                         <div class="col-lg-12 col-md-12">
                             <h2 class="font-weight-bold" style="color: #1ea1f1" style="max-width: 100%">{{$title}}</h2>
                         </div>

@@ -18,7 +18,6 @@
                         </div>
                         <p class="mt-3 font-weight-bold">Instalasi Distribusi Tenaga Listrik Tegangan Rendah</p>
                         <a href="{{url('/service/instalasi-distribusi-tenaga-listrik-tegangan-rendah')}}" class="btn btn-success btn-sm mt-3" target="_blank">Lihat Lebih</a>
-                        {{-- <button type="button" class="btn btn-success btn-sm mt-3" v-on:click="showMoreService('Instalasi Distribusi Tenaga Listrik Tegangan Rendah')">Lihat Lebih</button> --}}
                     </div>
                 </div>
                 <div class="col">
@@ -28,7 +27,6 @@
                         </div>
                         <p class="mt-3 font-weight-bold">Instalasi Distribusi Tenaga Listrik Tegangan Menengah</p>
                         <a href="{{url('/service/instalasi-distribusi-tenaga-listrik-tegangan-menengah')}}" class="btn btn-success btn-sm mt-3" target="_blank">Lihat Lebih</a>
-                        {{-- <button type="button" class="btn btn-success btn-sm mt-3"  v-on:click="showMoreService('Instalasi Distribusi Tenaga Listrik Tegangan Menengah')">Lihat Lebih</button> --}}
                     </div>
                 </div>
                 <div class="col">
@@ -40,7 +38,6 @@
                             Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah
                         </p>
                         <a href="{{url('/service/instalasi-tenaga-listrik-pemanfaatan-tegangan-menengah')}}" class="btn btn-success btn-sm mt-3" target="_blank">Lihat Lebih</a>
-                        {{-- <button type="button" class="btn btn-success btn-sm mt-3" v-on:click="showMoreService('Instalasi Tenaga Listrik Tegangan Menengah')">Lihat Lebih</button> --}}
                     </div>
                 </div>
                 <div class="col">
@@ -48,9 +45,8 @@
                         <div class="icon">
                             <img src="{{asset('img/svg_icon/piston.png')}}" alt="icon-Pembangkit-Listrik-Tenaga-Disel" class="img-fluid img-responsive" width="62">
                         </div>
-                        <p class="mt-3 font-weight-bold">Instalasi Pembangkit Listrik Tenaga Disel</p>
-                        <a href="{{url('/service/instalasi-pembangkit-listrik-tenaga-disel')}}" class="btn btn-success btn-sm mt-3" style="margin-top:2.8rem !important" target="_blank">Lihat Lebih</a>
-                        {{-- <button type="button" class="btn btn-success btn-sm" style="margin-top:2.8rem !important" v-on:click="showMoreService('Instalasi Pembangkit Listrik Tenaga Disel')">Lihat Lebih</button> --}}
+                        <p class="mt-3 font-weight-bold">Instalasi Pembangkit Listrik Tenaga Diesel</p>
+                        <a href="{{url('/service/instalasi-pembangkit-listrik-tenaga-diesel')}}" class="btn btn-success btn-sm mt-3" style="margin-top:2.8rem !important" target="_blank">Lihat Lebih</a>
                     </div>
                 </div>
                 <div class="col">
@@ -58,9 +54,8 @@
                         <div class="icon">
                             <img src="{{asset('img/svg_icon/solar-panel.png')}}" alt="icon-Pembangkit-Listrik-Tenaga-Baru-Terbarukan" class="img-fluid img-responsive" width="62">
                         </div>
-                        <p class="mt-3 font-weight-bold">Instalasi Pembangkit Listrik Tenaga Baru Terbarukan</p>
-                        <a href="{{url('/service/instalasi-pembangkit-listrik-tenaga-baru-terbarukan')}}" class="btn btn-success btn-sm mt-3" target="_blank">Lihat Lebih</a>
-                        {{-- <button type="button" class="btn btn-success btn-sm mt-3" v-on:click="showMoreService('Instalasi Pembangkit Listrik Tenaga Baru Terbarukan')">Lihat Lebih</button> --}}
+                        <p class="mt-3 font-weight-bold">Instalasi Pembangkit Listrik Tenaga Energi Baru dan Terbarukan</p>
+                        <a href="{{url('/service/instalasi-pembangkit-listrik-tenaga-energi-baru-dan-terbarukan')}}" class="btn btn-success btn-sm mt-3" target="_blank">Lihat Lebih</a>
                     </div>
                 </div>
                 <br>

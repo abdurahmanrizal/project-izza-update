@@ -397,7 +397,7 @@
                                 <option value="Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Rendah">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Rendah</option>
                                 <option value="Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Menengah">Pemeriksaan dan Pengujian Instalasi Distribusi Tenaga Listrik Tegangan Menengah</option>
                                 <option value="Pemeriksaan dan Pengujian Instalasi Pemanfaatan Tenaga Listrik Konsumen Tegangan Menengah">Pemeriksaan dan Pengujian Instalasi Pemanfaatan Tenaga Listrik Konsumen Tegangan Menengah</option>
-                                <option value="Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel</option>
+                                <option value="Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Diesel">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Diesel</option>
                                 <option value="Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Baru Terbarukan">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Baru Terbarukan </option>
                             </select>
                         </div>
@@ -512,10 +512,10 @@
                             <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah', $event)">Pemeriksaan dan Pengujian Instalasi Tenaga Listrik Pemanfaatan Tegangan Menengah</a>
                         </p>
                         <p class="mb-2 text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Disel', $event)">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Disel</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Diesel', $event)">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Diesel</a>
                         </p>
                         <p class="text-right">
-                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Baru Terbarukan', $event)">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Baru Terbarukan</a>
+                            <a href="#" style="color: white !important" v-on:click="showMoreServiceFooter('Instalasi Pembangkit Listrik Tenaga Energi Baru dan Terbarukan', $event)">Pemeriksaan dan Pengujian Instalasi Pembangkit Listrik Tenaga Energi Baru dan Terbarukan</a>
                         </p>
                     </div>
                 </div>
