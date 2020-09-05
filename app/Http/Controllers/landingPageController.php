@@ -200,6 +200,36 @@ class landingPageController extends Controller
         return view('landingpage.all_gallery',['galleries' => $this->resource()]);
     }
 
+    public function customerComplain()
+    {
+        return view('landingpage.customer_complain');
+    }
+
+    public function prosedurPengajuan()
+    {
+        return view('landingpage.prosedur_pengajuan');
+    }
+
+    public function persyaratanPengajuan()
+    {
+        return view('landingpage.persyaratan_pengajuan');
+    }
+
+    public function biayaSlo()
+    {
+        return view('landingpage.biaya_slo');
+    }
+
+    public function contohSlo()
+    {
+        return view('landingpage.contoh_slo');
+    }
+
+    public function izinUsaha()
+    {
+        return view('landingpage.izin_usaha');
+    }
+
     private function getTextBetweenTags($string) {
         $pattern = '@src="([^"]+)"@';
         $a = preg_match($pattern, $string, $matches); // cek apakah ada attribut src dalam text

@@ -47,3 +47,11 @@ Route::group(['prefix' => 'news'], function () {
 });
 
 Route::get('/all/gallery', 'landingPageController@allGallery')->name('view.all.gallery');
+Route::get('/proses-pengaduan','landingPageController@customerComplain')->name('customer.complain');
+Route::group(['prefix' => 'slo'], function() {
+    Route::get('prosedur-pengajuan', 'landingPageController@prosedurPengajuan')->name('slo.prosedur.pengajuan');
+    Route::get('persyaratan-pendaftaran', 'landingPageController@persyaratanPengajuan')->name('slo.persyaratan.pengajuan');
+    Route::get('biaya', 'landingPageController@biayaSlo')->name('slo.biaya');
+    Route::get('contoh', 'landingPageController@contohSlo')->name('slo.contoh');
+});
+Route::get('/izin-usaha', 'landingPageController@izinUsaha')->name('izin.usaha');

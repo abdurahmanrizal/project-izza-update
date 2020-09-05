@@ -5,12 +5,17 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <div class="section_title text-center mb-70">
-                        <h3 class="wow fadeInUp font-weight-bold" data-wow-duration="1.2s" data-wow-delay=".2s">Layanan</h3>
+                    <div class="section_title text-center" style="margin-bottom: 50px">
+                        <h3 class="wow fadeInUp font-weight-bold" data-wow-duration="1.2s" data-wow-delay=".2s">Produk & Layanan</h3>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" style="margin-bottom: 45px">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                   <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nam at facilis ea veritatis officia eius rem obcaecati libero ut omnis itaque mollitia, odit hic cumque eum quas iste. Commodi.</p>
+               </div>
+            </div>
+            <div class="row mt-4">
                 <div class="col">
                     <div class="single_service text-center wow fadeInLeft product-service" data-wow-duration="1.2s" data-wow-delay=".4s" id="product-service">
                         <div class="icon">
@@ -70,25 +75,6 @@
                 </div>
             </div>
         </div>
-        {{-- modal instalasi distribusi tegangan rendah --}}
-        {{-- <div class="modal modal-product-service" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="title-product-service">@{{title_product_service}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <p class="content-body text-justify">@{{content_body}}</p>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                </div>
-            </div>
-            </div>
-        </div> --}}
     </div>
     <!--/ end section produk dan layanan  -->
 
