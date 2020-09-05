@@ -49,7 +49,7 @@
             <div class="section_title mb-70 justify-content-center mt-3 mb-4">
                 <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
                     <div style="border: 1px solid rgb(177, 5, 177); width:10%" class="ml-3" id="sambutan-direktur-divider"></div>
-                    <h3 class="p-3 font-weight-bold" id="sambutan-direktur-title">Visi</h3>
+                    <h4 class="p-3 font-weight-bold" id="sambutan-direktur-title">Visi</h4>
                     <br>
                     <div class="row">
                         <div class="col-lg-8 col-md-12" id="img-direktur">
@@ -67,7 +67,7 @@
             <div class="section_title mb-70 justify-content-center mt-3 mb-4">
                 <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
                     <div style="border: 1px solid rgb(177, 5, 177); width:10%" class="ml-3" id="sambutan-direktur-divider"></div>
-                    <h3 class="p-3 font-weight-bold" id="sambutan-direktur-title">Misi</h3>
+                    <h4 class="p-3 font-weight-bold" id="sambutan-direktur-title">Misi</h4>
                     <br>
                     <div class="row">
                         <div class="col-lg-2 col-md-12">
@@ -81,11 +81,26 @@
             </div>
             <hr>
             <br>
+             {{-- Maklumat pelayanan --}}
+             <div class="section_title mb-70 justify-content-center mt-3 mb-4">
+                <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
+                    <div style="border: 1px solid rgb(177, 5, 177); width:10%" class="ml-3" id="sambutan-direktur-divider"></div>
+                    <h4 class="p-3 font-weight-bold" id="sambutan-direktur-title">Maklumat Pelayanan</h4>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12" id="img-maklumat-pelayanan">
+                            <img src="https://izzainspeksindo.com/wp-content/uploads/2020/01/maklumat-pelayanan-1024x724.jpeg" alt="maklumat-pelayanan" class="img-responsive img-fluid d-block mx-auto" width="700" height="700">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
             {{-- struktur organisasi --}}
             <div class="section_title mb-70 justify-content-center mt-3 mb-4">
                 <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".2s">
                     <div style="border: 1px solid rgb(177, 5, 177); width:10%" class="ml-3" id="sambutan-direktur-divider"></div>
-                    <h3 class="p-3 font-weight-bold" id="sambutan-direktur-title">Struktur Organisasi</h3>
+                    <h4 class="p-3 font-weight-bold" id="sambutan-direktur-title">Struktur Organisasi</h4>
                     <br>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">

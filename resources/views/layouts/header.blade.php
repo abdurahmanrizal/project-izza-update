@@ -145,6 +145,18 @@
         .service_area .single_service:hover {
             border: 2px solid #1ea1f1 !important;
         }
+        .header-area .main-header-area .main-menu ul li.li-slo a {
+            padding: 0 20px !important;
+        }
+        .header-area .main-header-area .main-menu ul li.li-slo span a {
+            color: black !important;
+        }
+        .header-area .main-header-area .main-menu ul li.li-client a {
+            padding: 0 20px !important;
+        }
+        .header-area .main-header-area .main-menu ul li.li-client span a {
+            color: black !important;
+        }
         @media(max-width: 576px) {
             .logo-perusahaan{
                 width: 60px !important;
@@ -295,15 +307,26 @@
             .footer-3 {
                 margin-top: 3rem;
             }
+            .slicknav_menu .slicknav_nav {
+                overflow-y: auto !important;
+            }
         }
-        @media (max-width: 2000.98px) {
+        @media(width:1024px) {
             .header-area .main-header-area .main-menu ul li{
-                margin: 0 10px !important;
+                margin: 0 3px !important;
+            }
+        }
+        @media (min-width: 1025px) {
+            .header-area .main-header-area .main-menu ul li{
+                margin: 0 10px;
             }
             .service_area .single_service {
                 height: 320px !important;
             }
              #navigation li {
+                font-weight: bold !important;
+            }
+            #navigation li a {
                 font-weight: bold !important;
             }
             .footer-2 {
@@ -338,19 +361,55 @@
                                         <ul id="navigation">
                                             <li><a class="active" href="{{route('dashboard')}}">Beranda</a></li>
                                             @if (url()->current() == URL::to('/'))
-                                                <li style="cursor: pointer !important" v-on:click="scrollSmooth('service_area')">Layanan</li>
+                                                <li style="cursor: pointer !important" v-on:click="scrollSmooth('service_area')">Produk & Layanan</li>
                                             @else
-                                                <li style="cursor: pointer !important" v-on:click="toDashboard">Layanan</li>
+                                                <li style="cursor: pointer !important" v-on:click="toDashboard">Produk & Layanan</li>
                                             @endif
                                             <li><a href="{{route('about')}}">Tentang Kami</a></li>
+                                            <li class="nav-item dropdown li-slo">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    SLO
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <span>
+                                                        <a class="dropdown-item" href="{{route('slo.prosedur.pengajuan')}}">Prosedur Pengajuan SLO</a>
+                                                    </span>
+                                                    <hr>
+                                                    <span>
+                                                        <a class="dropdown-item" href="{{route('slo.persyaratan.pengajuan')}}">Persyaratan Pendaftaran SLO</a>
+                                                    </span>
+                                                    <hr>
+                                                    <span>
+                                                        <a class="dropdown-item" href="{{route('slo.biaya')}}">Biaya SLO</a>
+                                                    </span>
+                                                    <hr>
+                                                    <span>
+                                                        <a class="dropdown-item" href="{{route('slo.contoh')}}">Contoh SLO</a>
+                                                    </span>
+                                                </div>
+                                            </li>
                                             @if (url()->current() == URL::to('/'))
                                                 <li style="cursor: pointer !important" v-on:click="scrollSmooth('portfolio_image_area')">Berita</li>
                                                 <li style="cursor: pointer !important" v-on:click="scrollSmooth('gallery-we-work')">Galeri</li>
                                             @else
-                                                <li style="cursor: pointer !important" v-on:click="toDashboard">Berita</li>
-                                                <li style="cursor: pointer !important" v-on:click="toDashboard">Galeri</li>
+                                                <li><a href="{{route('view.all.news')}}">Berita</a></li>
+                                                <li><a href="{{route('view.all.gallery')}}">Galeri</a></li>
                                             @endif
-                                            <li><a href="{{route('client')}}">Klien</a></li>
+                                            {{-- <li><a href="{{route('client')}}">Klien</a></li> --}}
+                                            <li class="nav-item dropdown li-client">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClient" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Klien
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownClient">
+                                                    <span>
+                                                        <a class="dropdown-item" href="{{route('client')}}">Klien Kami</a>
+                                                    </span>
+                                                    <hr>
+                                                    <span>
+                                                        <a class="dropdown-item" href="{{route('customer.complain')}}">Proses Pengaduan</a>
+                                                    </span>
+                                                </div>
+                                            </li>
                                             <li style="cursor: pointer !important" v-on:click="scrollSmooth('footer')">Kontak Kami</li>
                                         </ul>
                                     </nav>
@@ -498,6 +557,7 @@
                                 <p><a class="wow fadeInDown text-light" data-wow-duration="1s" data-wow-delay=".4s" href="{{route('dashboard')}}">Galeri</a></p>
                             @endif
                             <p><a class="wow fadeInDown text-light" data-wow-duration="1s" data-wow-delay=".4s" href="{{route('view.process.sertification')}}">Proses Sertifikasi</a></p>
+                            <p><a class="wow fadeInDown text-light" data-wow-duration="1s" data-wow-delay=".4s" href="{{route('izin.usaha')}}">Izin Usaha</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 footer-3">
@@ -595,12 +655,18 @@
 
     <script src="{{asset('js/main.js')}}"></script>
     {{-- vue js developement --}}
-    {{-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     {{-- vue js production --}}
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script> --}}
     {{-- axios --}}
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
+        $(document).on('click','#dropdownMenuSLO', function(){
+            $('.dropdown-slo').dropdown()
+        })
+        $(document).on('click','#dropdownMenu', function(){
+            $('.dropdown-client').dropdown()
+        })
         // event header
         var vueHeader = new Vue({
             el:'#header-vue',
