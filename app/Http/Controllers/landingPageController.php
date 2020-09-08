@@ -230,6 +230,11 @@ class landingPageController extends Controller
         return view('landingpage.izin_usaha');
     }
 
+    public function career()
+    {
+        return view('landingpage.karir');
+    }
+
     private function getTextBetweenTags($string) {
         $pattern = '@src="([^"]+)"@';
         $a = preg_match($pattern, $string, $matches); // cek apakah ada attribut src dalam text

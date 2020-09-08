@@ -314,6 +314,7 @@
         @media(width:1024px) {
             .header-area .main-header-area .main-menu ul li{
                 margin: 0 3px !important;
+
             }
         }
         @media (min-width: 1025px) {
@@ -330,7 +331,7 @@
                 font-weight: bold !important;
             }
             .footer-2 {
-               margin-top: -10rem;
+               margin-top: -6rem;
             }
         }
     </style>
@@ -348,14 +349,14 @@
                 <div id="sticky-header" class="main-header-area">
                     <div class="container-fluid p-0">
                         <div class="row align-items-center no-gutters">
-                            <div class="col-xl-2 col-lg-2">
+                            <div class="col-xl-1 col-lg-1">
                                 <div class="logo-img">
                                     <a href="{{route('dashboard')}}">
                                         <img src="{{asset('img/svg_icon/logo-izza.png')}}" alt="logo perusahaan" width="80" class="mt-1 logo-perusahaan">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-8 col-lg-8">
+                            <div class="col-xl-9 col-lg-9">
                                 <div class="main-menu  d-none d-lg-block text-center">
                                     <nav>
                                         <ul id="navigation">
@@ -410,6 +411,7 @@
                                                     </span>
                                                 </div>
                                             </li>
+                                            <li><a href="{{route('karir')}}">Karir</a></li>
                                             <li style="cursor: pointer !important" v-on:click="scrollSmooth('footer')">Kontak Kami</li>
                                         </ul>
                                     </nav>
@@ -558,6 +560,7 @@
                             @endif
                             <p><a class="wow fadeInDown text-light" data-wow-duration="1s" data-wow-delay=".4s" href="{{route('view.process.sertification')}}">Proses Sertifikasi</a></p>
                             <p><a class="wow fadeInDown text-light" data-wow-duration="1s" data-wow-delay=".4s" href="{{route('izin.usaha')}}">Izin Usaha</a></p>
+                            <p><a class="wow fadeInDown text-light" data-wow-duration="1s" data-wow-delay=".4s" href="{{route('karir')}}">Karir</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 footer-3">

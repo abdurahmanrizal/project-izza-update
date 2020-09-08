@@ -10,11 +10,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-bottom: 45px">
+            {{-- <div class="row" style="margin-bottom: 45px">
                <div class="col-lg-12 col-md-12 col-sm-12">
                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nam at facilis ea veritatis officia eius rem obcaecati libero ut omnis itaque mollitia, odit hic cumque eum quas iste. Commodi.</p>
                </div>
-            </div>
+            </div> --}}
             <div class="row mt-4">
                 <div class="col">
                     <div class="single_service text-center wow fadeInLeft product-service" data-wow-duration="1.2s" data-wow-delay=".4s" id="product-service">

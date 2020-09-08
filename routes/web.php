@@ -55,3 +55,4 @@ Route::group(['prefix' => 'slo'], function() {
     Route::get('contoh', 'landingPageController@contohSlo')->name('slo.contoh');
 });
 Route::get('/izin-usaha', 'landingPageController@izinUsaha')->name('izin.usaha');
+Route::get('/karir', 'landingPageController@career')->name('karir');
