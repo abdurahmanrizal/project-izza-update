@@ -1,5 +1,10 @@
 @extends('layouts.header')
 @section('content')
+    <style>
+        th {
+            color: white
+        }
+    </style>
     <div class="about_us_area mt-3">
         <div class="container">
             <div class="row justify-content-center">
@@ -11,7 +16,7 @@
                         <div class="wow fadeInUp p-3" data-wow-duration="1.2s" data-wow-delay=".2s">
                             <div class="col-lg-12 col-md-12 col-sm-12" id="contoh-slo">
                                 <table class="table table-striped">
-                                    <thead>
+                                    <thead style="background-color:  #0ab0f1">
                                       <tr>
                                         <th scope="col">Posisi</th>
                                         <th scope="col">Kualifikasi</th>
@@ -22,7 +27,7 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <th scope="row" class="text-center font-weight-bold" colspan="5">No Result Found</th>
+                                        <td scope="row" class="text-center font-weight-bold" colspan="5">No Result Found</td>
                                       </tr>
                                     </tbody>
                                   </table>

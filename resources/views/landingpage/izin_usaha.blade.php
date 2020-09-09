@@ -14,6 +14,13 @@
             display: inline !important;
             color: black !important;
         }
+        tr.thead {
+            background-color: #0ab0f1 !important;
+        }
+        .thead th {
+            color: white;
+            text-align: center !important;
+        }
         @media(min-width: 1200px) {
             .line-height-helper {
                 vertical-align : middle !important;
@@ -34,14 +41,14 @@
                             <p class="ml-3 font-weight-bold" style="font-size: 12px">Keterangan: Jika tabel terpotong dapat lakukan aksi geser dari arah kanan ke kiri pada layar handphone anda</p>
                             <div class="table-responsive ml-3">
                                 <table class="table table-striped mt-4">
-                                    <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col" colspan="2">Kelengkapan	</th>
-                                    <th scope="col">Penerbit</th>
-                                    <th scope="col">Tanggal Penerbitan</th>
-                                    <th scope="col">Nomor</th>
-                                    <th scope="col" class="text-center">TGL Berakhir</th>
-                                    <th scope="col" class="text-center">Sisa Waktu (hari)</th>
+                                    <tr class="thead">
+                                        <th scope="col">No</th>
+                                        <th scope="col" colspan="2">Kelengkapan	</th>
+                                        <th scope="col">Penerbit</th>
+                                        <th scope="col">Tanggal Penerbitan</th>
+                                        <th scope="col">Nomor</th>
+                                        <th scope="col">TGL Berakhir</th>
+                                        <th scope="col">Sisa Waktu (hari)</th>
                                     </tr>
                                     <tr>
                                         <td>1</td>

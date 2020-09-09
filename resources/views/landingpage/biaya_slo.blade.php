@@ -21,6 +21,16 @@
         td.line-height-helper-2 {
             vertical-align : middle !important;
         }
+        thead {
+            background-color: #0ab0f1;
+            text-align: center;
+        }
+        th {
+            color: white;
+        }
+        .table-striped tbody .thead {
+            background-color: #0ab0f1 !important;
+        }
     </style>
     <div class="about_us_area mt-3">
         <div class="container">
@@ -45,44 +55,44 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
+                                            <td class="text-center">1</td>
                                             <td>Daya tersambung s.d. 450 VA</td>
-                                            <td>40.000</td>
+                                            <td class="text-center">40.000</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
+                                            <td class="text-center">2</td>
                                             <td>Daya tersambung 900 VA</td>
-                                            <td>60.000</td>
+                                            <td class="text-center">60.000</td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
+                                            <td class="text-center">3</td>
                                             <td>Daya tersambung 1.300 VA</td>
-                                            <td>95.000</td>
+                                            <td class="text-center">95.000</td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
+                                            <td class="text-center">4</td>
                                             <td>Daya tersambung 2.200 VA</td>
-                                            <td>110.000</td>
+                                            <td class="text-center">110.000</td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
+                                            <td class="text-center">5</td>
                                             <td>Daya tersambung 3.500 VA s.d. 7.700 VA</td>
-                                            <td>30/VA</td>
+                                            <td class="text-center">30/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>6</td>
+                                            <td class="text-center">6</td>
                                             <td>Daya tersambung 10.600 VA s.d. 23.000 VA</td>
-                                            <td>25/VA</td>
+                                            <td class="text-center">25/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>7</td>
+                                            <td class="text-center">7</td>
                                             <td>Daya tersambung 33.000 VA s.d. 66.000 VA</td>
-                                            <td>20/VA</td>
+                                            <td class="text-center">20/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>8</td>
+                                            <td class="text-center">8</td>
                                             <td>Daya tersambung 82.500 VA s.d. 197.000 VA</td>
-                                            <td>15/VA</td>
+                                            <td class="text-center">15/VA</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -106,39 +116,39 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
+                                            <td class="text-center">1</td>
                                             <td>Daya tersambung di atas 197 kVA s.d. 1 MVA</td>
-                                            <td>13/VA</td>
+                                            <td class="text-center">13/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
+                                            <td class="text-center">2</td>
                                             <td>Daya tersambung di atas 1 MVA s.d. 2 MVA</td>
-                                            <td>11/VA</td>
+                                            <td class="text-center">11/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
+                                            <td class="text-center">3</td>
                                             <td>Daya tersambung di atas 2 MVA s.d. 3 MVA</td>
-                                            <td>9/VA</td>
+                                            <td class="text-center">9/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
+                                            <td class="text-center">4</td>
                                             <td>Daya tersambung di atas 3 MVA s.d. 5 MVA</td>
-                                            <td>7/VA</td>
+                                            <td class="text-center">7/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
+                                            <td class="text-center">5</td>
                                             <td>Daya tersambung di atas 5 MVA s.d. 12 MVA</td>
-                                            <td>5/VA</td>
+                                            <td class="text-center">5/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>6</td>
+                                            <td class="text-center">6</td>
                                             <td>Daya tersambung di atas 12 MVA s.d. 46 MVA</td>
-                                            <td>4/VA</td>
+                                            <td class="text-center">4/VA</td>
                                         </tr>
                                         <tr>
-                                            <td>7</td>
+                                            <td class="text-center">7</td>
                                             <td>Daya tersambung di atas 46 MVA</td>
-                                            <td>3/VA</td>
+                                            <td class="text-center">3/VA</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -163,49 +173,49 @@
                                     <br>
                                     <div class="table-responsive mb-3">
                                         <table class="table table-striped">
-                                                <tr>
-                                                    <th>No</th>
+                                                <tr class="thead">
+                                                    <th class="text-center">No</th>
                                                     <th>Kapasitas Trafo</th>
-                                                    <th>Besaran Biaya (Rp.)</th>
+                                                    <th class="text-center">Besaran Biaya (Rp.)</th>
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="font-weight-bold">A</td>
+                                                    <td class="font-weight-bold text-center">A</td>
                                                     <td class="font-weight-bold text-center" colspan="2">Biaya Tetap</td>
 
                                                 </tr>
                                                 <tr>
-                                                    <td>1</td>
+                                                    <td class="text-center">1</td>
                                                     <td>Kapasitas Trafo 25 kVA s.d. < 200 kVA</td>
-                                                    <td>3.000.000</td>
+                                                    <td class="text-center">3.000.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>2</td>
+                                                    <td class="text-center">2</td>
                                                     <td>Kapasitas Trafo 200 kVA s.d. < 630 kVA</td>
-                                                    <td>4.000.000</td>
+                                                    <td class="text-center">4.000.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>3</td>
+                                                    <td class="text-center">3</td>
                                                     <td>Kapasitas Trafo 630 kVA s.d. < 1.250 kVA</td>
-                                                    <td>5.500.000</td>
+                                                    <td class="text-center">5.500.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4</td>
+                                                    <td class="text-center">4</td>
                                                     <td>Kapasitas Trafo 1.250 kVA s.d. < 1.600 kVA</td>
-                                                    <td>6.000.000</td>
+                                                    <td class="text-center">6.000.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>5</td>
+                                                    <td class="text-center">5</td>
                                                     <td>Kapasitas Trafo 1.600 kVA s.d. < 2.500 kVA</td>
-                                                    <td>6.500.000</td>
+                                                    <td class="text-center">6.500.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>6</td>
+                                                    <td class="text-center">6</td>
                                                     <td>Kapasitas Trafo 2.500 kVA s.d. 3.000 kVA</td>
-                                                    <td>7.000.000</td>
+                                                    <td class="text-center">7.000.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="font-weight-bold">B</td>
+                                                    <td class="font-weight-bold text-center">B</td>
                                                     <td class="font-weight-bold text-center" colspan="2">Biaya Tidak Tetap</td>
                                                 </tr>
                                                 <tr>
@@ -220,39 +230,39 @@
                                     <br>
                                     <div class="table-responsive mb-3">
                                         <table class="table table-striped">
-                                            <tr>
-                                                <th>No</th>
+                                            <tr class="thead">
+                                                <th class="text-center">No</th>
                                                 <th>Kubikel dan Jaringan</th>
-                                                <th>Besaran Biaya (Rp.)</th>
+                                                <th class="text-center">Besaran Biaya (Rp.)</th>
                                             </tr>
                                             <tr>
-                                                <td class="font-weight-bold">A</td>
+                                                <td class="font-weight-bold text-center">A</td>
                                                 <td class="font-weight-bold text-center" colspan="2">Biaya Tetap</td>
                                             </tr>
                                             <tr>
-                                                <td>1</td>
+                                                <td class="text-center">1</td>
                                                 <td>Kubikel 1 (satu) unit</td>
-                                                <td>2.000.000</td>
+                                                <td class="text-center">2.000.000</td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
+                                                <td class="text-center">2</td>
                                                 <td>Panjang Saluran Udara Tegangan Menengah kurang dari sama dengan 5 kms (lima kilo meter sirkit)</td>
-                                                <td rowspan="3" class="line-height-helper-2">4.000.000</td>
+                                                <td rowspan="3" class="line-height-helper-2 text-center">4.000.000</td>
                                             </tr>
                                             <tr>
-                                                <td>3</td>
+                                                <td class="text-center">3</td>
                                                 <td>Panjang Saluran Kabel Tegangan Menengah kurang dari sama dengan 5 kms (lima kilo meter sirkit)</td>
                                             </tr>
                                             <tr>
-                                                <td>4</td>
+                                                <td class="text-center">4</td>
                                                 <td>Panjang Saluran Udara Tegangan Rendah kurang dari sama dengan 5 kms (lima kilo meter sirkit</td>
                                             </tr>
                                             <tr>
-                                                <td>5</td>
+                                                <td class="text-center">5</td>
                                                 <td>Panjang Saluran Kabel Tegangan Rendah kurang dari sama dengan 5 kms (lima kilo meter sirkit)</td>
                                             </tr>
                                             <tr>
-                                                <td class="font-weight-bold">B</td>
+                                                <td class="font-weight-bold text-center">B</td>
                                                 <td class="font-weight-bold text-center" colspan="2">Biaya Tidak Tetap</td>
                                             </tr>
                                             <tr>
@@ -280,15 +290,15 @@
                             <div class="table-responsive ml-3">
                                 <table class="table table-striped">
 
-                                        <tr>
+                                        <tr class="thead">
                                             <th>Mata Uji Sistem</th>
-                                            <th>100 Kva s/d 500 Kva</th>
-                                            <th>Biaya SLO</th>
+                                            <th class="text-center">100 Kva s/d 500 Kva</th>
+                                            <th class="text-center">Biaya SLO</th>
                                         </tr>
 
                                         <tr>
                                             <td rowspan="21" class="line-height-helper font-weight-bold">PEMBANGKIT LISTRIK TENAGA DIESEL (PLTD) UNTUK KEPENTINGAN SENDIRI DALAM 1 LOKASI</td>
-                                            <td>
+                                            <td class="text-center">
                                                 1 Unit
                                             </td>
                                             <td>
@@ -296,7 +306,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 2 Unit
                                             </td>
                                             <td>
@@ -304,7 +314,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 3 Unit
                                             </td>
                                             <td>
@@ -312,7 +322,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 4 Unit
                                             </td>
                                             <td>
@@ -320,7 +330,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 5 Unit
                                             </td>
                                             <td>
@@ -328,7 +338,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 6 Unit
                                             </td>
                                             <td>
@@ -336,87 +346,87 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="font-weight-bold">600 kVA s/d 1.000 kVA</td>
-                                            <td class="font-weight-bold">Biaya SLO</td>
+                                            <td class="font-weight-bold text-center">600 kVA s/d 1.000 kVA</td>
+                                            <td class="font-weight-bold text-center">Biaya SLO</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 1 Unit
                                             </td>
                                             <td>Rp. 12.420.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 1 Unit
                                             </td>
                                             <td>Rp. 12.420.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 2 Unit
                                             </td>
                                             <td>Rp. 17.040.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 3 Unit
                                             </td>
                                             <td>Rp. 21.660.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 4 Unit
                                             </td>
                                             <td>Rp. 26.280.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 5 Unit
                                             </td>
                                             <td>Rp. 30.900.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 6 Unit
                                             </td>
                                             <td>Rp. 35.520.000</td>
                                         </tr>
                                         <tr>
-                                            <td class="font-weight-bold">1.100 s/d 2.000 kVA</td>
-                                            <td class="font-weight-bold">Biaya SLO</td>
+                                            <td class="font-weight-bold text-center">1.100 s/d 2.000 kVA</td>
+                                            <td class="font-weight-bold text-center">Biaya SLO</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 1 Unit
                                             </td>
                                             <td>Rp. 13.500.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 2 Unit
                                             </td>
                                             <td>Rp. 18.120.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 3 Unit
                                             </td>
                                             <td>Rp. 22.740.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 4 Unit
                                             </td>
                                             <td>Rp. 27.360.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 5 Unit
                                             </td>
                                             <td>Rp. 31.980.000</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td class="text-center">
                                                 6 Unit
                                             </td>
                                             <td>Rp. 36.600.000</td>
