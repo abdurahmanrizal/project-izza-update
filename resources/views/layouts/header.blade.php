@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <style>
+        .helper-color {
+            color: black;
+        }
          .sticky #navigation li {
             color:black;
         }
@@ -275,6 +278,13 @@
                 text-align: left;
                 margin-top: 0;
             }
+            .slicknav_menu .slicknav_nav {
+                padding: 1rem
+            }
+            .slicknav_menu .slicknav_nav li {
+                margin-bottom: 1rem
+            }
+
         }
         @media (max-width: 768px) {
             .slicknav_btn {
@@ -360,59 +370,115 @@
                                 <div class="main-menu  d-none d-lg-block text-center">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="{{route('dashboard')}}">Beranda</a></li>
-                                            @if (url()->current() == URL::to('/'))
-                                                <li style="cursor: pointer !important" v-on:click="scrollSmooth('service_area')">Produk & Layanan</li>
+                                            @if (url()->current() != URL::to('/'))
+                                                <li><a class="active" href="{{route('dashboard')}}" style="color:black">Beranda</a></li>
+                                                @if (url()->current() == URL::to('/'))
+                                                    <li style="cursor: pointer !important; color: black !important" v-on:click="scrollSmooth('service_area')">Produk & Layanan</li>
+                                                @else
+                                                    <li class="helper-color" style="cursor: pointer !important; color: black" v-on:click="toDashboard">Produk & Layanan</li>
+                                                @endif
+                                                <li><a style="color:black" href="{{route('about')}}">Tentang Kami</a></li>
+                                                <li class="nav-item dropdown li-slo">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black">
+                                                        SLO
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.prosedur.pengajuan')}}">Prosedur Pengajuan SLO</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.persyaratan.pengajuan')}}">Persyaratan Pendaftaran SLO</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.biaya')}}">Biaya SLO</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.contoh')}}">Contoh SLO</a>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                @if (url()->current() == URL::to('/'))
+                                                    <li style="cursor: pointer !important; color: black" v-on:click="scrollSmooth('portfolio_image_area')">Berita</li>
+                                                    <li style="cursor: pointer !important; color: black" v-on:click="scrollSmooth('gallery-we-work')">Galeri</li>
+                                                @else
+                                                <li><a href="{{route('view.all.news')}}" style="color:black">Berita</a></li>
+                                                <li><a href="{{route('view.all.gallery')}}" style="color:black">Galeri</a></li>
+                                                @endif
+                                                {{-- <li><a href="{{route('client')}}">Klien</a></li> --}}
+                                                <li class="nav-item dropdown li-client">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClient" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:black">
+                                                        Klien
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownClient">
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('client')}}">Klien Kami</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('customer.complain')}}">Proses Pengaduan</a>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li><a href="{{route('karir')}}" style="color:black">Karir</a></li>
+                                                <li style="cursor: pointer !important; color: black" v-on:click="scrollSmooth('footer')">Kontak Kami</li>
                                             @else
-                                                <li style="cursor: pointer !important" v-on:click="toDashboard">Produk & Layanan</li>
+                                                <li><a class="active" href="{{route('dashboard')}}">Beranda</a></li>
+                                                @if (url()->current() == URL::to('/'))
+                                                    <li style="cursor: pointer !important" v-on:click="scrollSmooth('service_area')">Produk & Layanan</li>
+                                                @else
+                                                    <li style="cursor: pointer !important" v-on:click="toDashboard">Produk & Layanan</li>
+                                                @endif
+                                                <li><a href="{{route('about')}}">Tentang Kami</a></li>
+                                                <li class="nav-item dropdown li-slo">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        SLO
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.prosedur.pengajuan')}}">Prosedur Pengajuan SLO</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.persyaratan.pengajuan')}}">Persyaratan Pendaftaran SLO</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.biaya')}}">Biaya SLO</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('slo.contoh')}}">Contoh SLO</a>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                @if (url()->current() == URL::to('/'))
+                                                    <li style="cursor: pointer !important" v-on:click="scrollSmooth('portfolio_image_area')">Berita</li>
+                                                    <li style="cursor: pointer !important" v-on:click="scrollSmooth('gallery-we-work')">Galeri</li>
+                                                @else
+                                                    <li><a href="{{route('view.all.news')}}">Berita</a></li>
+                                                    <li><a href="{{route('view.all.gallery')}}">Galeri</a></li>
+                                                @endif
+                                                {{-- <li><a href="{{route('client')}}">Klien</a></li> --}}
+                                                <li class="nav-item dropdown li-client">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClient" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Klien
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownClient">
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('client')}}">Klien Kami</a>
+                                                        </span>
+                                                        <hr>
+                                                        <span>
+                                                            <a class="dropdown-item" href="{{route('customer.complain')}}">Proses Pengaduan</a>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                                <li><a href="{{route('karir')}}">Karir</a></li>
+                                                <li style="cursor: pointer !important" v-on:click="scrollSmooth('footer')">Kontak Kami</li>
                                             @endif
-                                            <li><a href="{{route('about')}}">Tentang Kami</a></li>
-                                            <li class="nav-item dropdown li-slo">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    SLO
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <span>
-                                                        <a class="dropdown-item" href="{{route('slo.prosedur.pengajuan')}}">Prosedur Pengajuan SLO</a>
-                                                    </span>
-                                                    <hr>
-                                                    <span>
-                                                        <a class="dropdown-item" href="{{route('slo.persyaratan.pengajuan')}}">Persyaratan Pendaftaran SLO</a>
-                                                    </span>
-                                                    <hr>
-                                                    <span>
-                                                        <a class="dropdown-item" href="{{route('slo.biaya')}}">Biaya SLO</a>
-                                                    </span>
-                                                    <hr>
-                                                    <span>
-                                                        <a class="dropdown-item" href="{{route('slo.contoh')}}">Contoh SLO</a>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            @if (url()->current() == URL::to('/'))
-                                                <li style="cursor: pointer !important" v-on:click="scrollSmooth('portfolio_image_area')">Berita</li>
-                                                <li style="cursor: pointer !important" v-on:click="scrollSmooth('gallery-we-work')">Galeri</li>
-                                            @else
-                                                <li><a href="{{route('view.all.news')}}">Berita</a></li>
-                                                <li><a href="{{route('view.all.gallery')}}">Galeri</a></li>
-                                            @endif
-                                            {{-- <li><a href="{{route('client')}}">Klien</a></li> --}}
-                                            <li class="nav-item dropdown li-client">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownClient" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Klien
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="navbarDropdownClient">
-                                                    <span>
-                                                        <a class="dropdown-item" href="{{route('client')}}">Klien Kami</a>
-                                                    </span>
-                                                    <hr>
-                                                    <span>
-                                                        <a class="dropdown-item" href="{{route('customer.complain')}}">Proses Pengaduan</a>
-                                                    </span>
-                                                </div>
-                                            </li>
-                                            <li><a href="{{route('karir')}}">Karir</a></li>
-                                            <li style="cursor: pointer !important" v-on:click="scrollSmooth('footer')">Kontak Kami</li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -494,6 +560,7 @@
         <!-- header-end -->
 
             <!-- slider_area_start -->
+        @if (url()->current() == URL::to('/'))
         <div class="slider_area">
             <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
                 <div class="container">
@@ -514,10 +581,21 @@
                 </div>
             </div>
         </div>
+
+        @endif
+
     </div>
     <!-- slider_area_end -->
-
-    @yield('content')
+    @if (url()->current() != URL::to('/'))
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        @yield('content')
+    @else
+        @yield('content')
+    @endif
 
 
     <!-- footer start -->

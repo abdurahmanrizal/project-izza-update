@@ -106,7 +106,8 @@
 }
 .slicknav_menu .slicknav_icon-bar {
     /* background-color: #fff;  */
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: black;
 }
 
 .slicknav_btn {
@@ -227,7 +228,8 @@
     padding: 0;
 }
 .main-header-area .slicknav_icon-bar {
-    background: #fff;
+    /* background: #fff; */
+    background: #0cbc34;
 }
 .sticky .slicknav_icon-bar {
     background: black !important;

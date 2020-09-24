@@ -15,22 +15,25 @@
                         <br>
                         <div class="wow fadeInUp p-3" data-wow-duration="1.2s" data-wow-delay=".2s">
                             <div class="col-lg-12 col-md-12 col-sm-12" id="contoh-slo">
-                                <table class="table table-striped">
-                                    <thead style="background-color:  #0ab0f1">
-                                      <tr>
-                                        <th scope="col">Posisi</th>
-                                        <th scope="col">Kualifikasi</th>
-                                        <th scope="col">Open Date</th>
-                                        <th scope="col">Close Date</th>
-                                        <th scope="col">Status</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td scope="row" class="text-center font-weight-bold" colspan="5">No Result Found</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead style="background-color:  #0ab0f1">
+                                          <tr>
+                                            <th scope="col">Posisi</th>
+                                            <th scope="col">Kualifikasi</th>
+                                            <th scope="col">Open Date</th>
+                                            <th scope="col">Close Date</th>
+                                            <th scope="col">Status</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td scope="row" class="text-center font-weight-bold" colspan="5">No Result Found</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+
                             </div>
                         </div>
                     </div>
